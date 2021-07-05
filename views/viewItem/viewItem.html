@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trip app</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!-- Card template for all cards (the card template is never displayed) -->
+        <div id="card" class="row rounded mx-5 pb-3 my-5  shadow">
+
+            <div class="row my-4 ">
+                <div id="title" class="col-5" style="font-weight: 500;font-size: 18px;">
+
+                </div>
+                <div id="destination" class="col-5 " style="font-weight: 500;font-size: 18px;">
+                </div>
+            </div>
+            <div class="col-5  mr-sm-2 "><img id="image" class="img-fluid  " alt="Responsive image" src="" alt=""></div>
+            <div class="col-5 mx-auto ">
+
+                <div id="totalDescription" class="row h-50 border-top align-items-sm-center text-secondary "> </div>
+                <div class="row h-50 border-top  ">
+                    <label for="" class="px-0" style="font-weight: bold;">Les plus : </label>
+                    <ul id="features" class="mx-3 ">
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-2 mr-sm-2  bg-light  text-center border-top  ">
+
+                <div class="row">
+                    <h2 id="price" class="pricing-card-title text-danger"> </h2>
+                    <small class="text-muted  mb-3">Prix TTC/pers.</small>
+                </div>
+                <button id="btnUpdate" type="button" class="btn mt-5 btn-outline-warning"
+                    style="width: 100px">Modifier</button>
+                <button id="btnDelete" type="button" class="btn mt-2 btn-outline-danger" style="width: 100px">Supprimer
+                </button>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+        window.controllers.loadController('viewItem');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trip app</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container-fluid ">
+
+
+        <div class="row">
+            <div class="col">
+                <h1 class="my-5 text-center"> Trip App <i class="fas fa-plane"></i></h1>
+            </div>
+        </div>
+        <button id="addBtn" class="btn mt-5 btn-dark " style="margin:auto; display:block;"> Ajouter une
+            annonce</button>
+        <!-- Card template for all cards (the card template is never displayed) -->
+        <div id="cardTemplate" hidden class="row rounded mx-5 pb-3 my-5  shadow">
+
+            <div class="row my-2 ">
+                <div id="title" class="col-5" style="font-weight: 500;font-size: 22px;">
+
+                </div>
+                <div id="destination" class="col-5 align-self-end " style="font-weight: 500;font-size: 18px;">
+                </div>
+            </div>
+            <div class="col-5  mr-sm-2 "><img id="image" class="img-fluid  " alt="Responsive image" src="" alt=""></div>
+            <div class="col-5 mx-auto ">
+
+                <div id="description" class="row h-50 border-top align-items-sm-center  "> </div>
+                <div class="row h-50 border-top  ">
+                    <label for="" class="px-0" style="font-weight: bold;">Les plus : </label>
+                    <ul id="features" class="mx-3  ">
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-2 mr-sm-2  bg-light  text-center border-top  ">
+
+                <div class="row">
+                    <h2 id="price" class=" mt-2 pricing-card-title text-danger"> <span>€</span></h2>
+                    <small class="text-muted  mb-3">Prix TTC/pers.</small>
+                </div>
+
+                <button id="btn" type="button" class="btn mt-5 btn-dark">En voir plus</button>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+        window.controllers.loadController('home');
+    </script>
+</body>
+
+</html>
